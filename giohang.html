@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyShop 2026 - Giỏ Hàng</title>
+    <!-- Bootstrap 5 & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style1.css">
+</head>
+
+<body>
+
+    <!-- Form Đăng Nhập (Ẩn mặc định) -->
+    <form action="" id="login">
+        <div class="close" id="btn-close-login">X</div>
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Đăng nhập</h2>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Tài Khoản</label>
+            <input type="text" class="form-control" placeholder="Tên đăng nhập">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Mật khẩu</label>
+            <input type="password" class="form-control" placeholder="********">
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Đăng Nhập</button>
+    </form>
+
+    <!-- Top Header -->
+    <header class="bg-light border-bottom py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 cch text-start">
+                    <i class="bi bi-telephone-fill text-success"></i> HOTLINE: 0985608947
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4 text-end">
+                    <button type="button" class="btn btn-outline-info me-2">
+                        <i class="bi bi-cart-fill"></i> Giỏ Hàng
+                    </button>
+                    <button class="btn btn-primary" id="btn-login">Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-success sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="./logo/logo.png" alt="Logo" style="width:40px" class="me-2"> TOYSHOP
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="./index.html">Trang Chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./gioithieu.html">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sản phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./tintuc.html">Tin tức</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Tìm kiếm đồ chơi...">
+                    <button class="btn btn-warning" type="button text-white">Tìm</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content: Shopping Cart -->
+    <div class="container mt-3 text-center">
+        <h1>Giỏ Hàng</h1>
+        <table class="table" id="hienthigiohang"></table>
+      </div>
+    
+    <!-- Footer -->
+    <footer class="p-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h3 class="text-success fw-bold">TOYSHOP 2026</h3>
+                    <p class="text-muted">Hệ thống cửa hàng đồ chơi chính hãng, giá tốt nhất thị trường. Cam kết chất lượng và dịch vụ hàng đầu.</p>
+                </div>
+                <div class="col-md-4 ps-md-5">
+                    <h5 class="fw-bold">Liên kết nhanh</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-muted">Trang chủ</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Sản phẩm</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Tin tức</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Liên hệ</h5>
+                    <p class="text-muted mb-1"><i class="bi bi-geo-alt-fill me-2"></i> Quận 6, TP.HCM</p>
+                    <p class="text-muted mb-1"><i class="bi bi-envelope-fill me-2"></i> contact@toyshop.vn</p>
+                    <div class="mt-3">
+                        <a href="#" class="btn btn-outline-primary btn-sm rounded-circle me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-danger btn-sm rounded-circle me-2"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold text-success">TOYSHOP 2026</h4>
+                    <p class="text-secondary">Đỉnh cao thế giới mô hình. Chúng tôi cung cấp trải nghiệm mua sắm tuyệt vời nhất cho người sưu tầm.</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5 class="fw-bold">Chính sách</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li>Bảo hành</li>
+                        <li>Đổi trả</li>
+                        <li>Vận chuyển</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Theo dõi chúng tôi</h5>
+                    <div class="fs-3 d-flex gap-3 mt-3">
+                        <i class="bi bi-facebook text-primary"></i>
+                        <i class="bi bi-youtube text-danger"></i>
+                        <i class="bi bi-tiktok"></i>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center text-secondary small">
+                © 2026 ToyShop. Thiết kế bởi sự sang trọng.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JQuery Logic -->
+    <script>
+        $(document).ready(function () {
+            // Ẩn form login mặc định
+            $("#login").hide();
+
+            // Hiện login khi click nút
+            $("#btn-login").click(function () {
+                $("#login").fadeIn();
+            });
+
+            // Đóng login
+            $("#btn-close-login").click(function () {
+                $("#login").fadeOut();
+            });
+
+            // Logic cơ bản cho nút cộng trừ (Ví dụ)
+            $(".cong").click(function () {
+                let currentVal = parseInt($(this).siblings(".sl").text());
+                $(this).siblings(".sl").text(currentVal + 1);
+            });
+
+            $(".tru").click(function () {
+                let currentVal = parseInt($(this).siblings(".sl").text());
+                if (currentVal > 1) {
+                    $(this).siblings(".sl").text(currentVal - 1);
+                }
+            });
+
+            // Xóa dòng
+            $(".xoa").click(function () {
+                if (confirm("Bạn có muốn xóa sản phẩm này?")) {
+                    $(this).closest("tr").fadeOut();
+                }
+            });
+        });
+    </script>
+     <script src="js/product.js"></script>
+     <script src="js/spbc.js"></script>
+     <script src="./js/addCart.js"></script>
+</body>
+
+</html>

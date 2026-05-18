@@ -1,0 +1,292 @@
+/* HEADER */
+.frame-header{
+    height: 50px;
+    background-color: rgb(226, 209, 209);
+}
+
+/* DANH MỤC + BANNER */
+.frame-danhmuc{
+    height: 450px;
+}
+
+.banner{
+    height: 450px;
+    width: 100%;
+}
+
+.banner img{
+    width: 100%;
+    height: 450px;
+}
+
+.cch{
+    line-height: 50px;
+}
+
+/* CARD */
+.card {
+    height: 400px;
+}
+
+.card img{
+    height: 200px;
+}
+
+/* FOOTER */
+.footer{
+    background:#000;
+    color:white;
+    padding:40px 0;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.footer-col{
+    width:30%;
+}
+
+.footer-col ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-col ul li{
+    margin:5px 0;
+}
+
+.footer-col a{
+    color:#00aaff;
+    text-decoration:none;
+}
+
+.footer-bottom{
+    text-align:center;
+    margin-top:20px;
+}
+
+/* LIST */
+ul li{
+    cursor:pointer;
+}
+
+/* LOGIN POPUP */
+#login{
+    width: 400px;
+    height: 250px;
+    background-color: antiquewhite;
+    position: absolute;
+    top: 10%;
+    left: calc(50% - 200px);
+    z-index: 10;
+    padding: 40px;
+    border-radius: 6px;
+    display: none;
+}
+
+.close, .x{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* DETAIL PRODUCT */
+.detail{
+    border: 1px solid black;
+    height: 500px;
+}
+
+.fr-detail{
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+}
+
+.fr-detail img{
+    width: 100%;
+    height: 100%;
+}
+
+.hinhlon img{
+    width: 300px;
+    height: 300px;
+}
+
+.frame img{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+/* Tùy chỉnh form Login */
+#login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    z-index: 1050;
+    width: 350px;
+}
+
+#login .close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #666;
+}
+
+.card-body h3 {
+    color: red;
+}
+
+/* Định dạng ảnh sản phẩm trong giỏ */
+.cart-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Header hotline */
+.cch {
+    line-height: 38px;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+:root {
+    --primary-color: #1b5e20; /* Xanh đậm sang trọng */
+    --accent-color: #ffc107;
+    --text-dark: #212529;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fcfcfc;
+}
+
+/* Header & Nav */
+.frame-header {
+    background: #fff;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.navbar {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* Sidebar Danh mục */
+.frame-danhmuc {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    background: #fff !important;
+    padding: 20px !important;
+}
+
+.frame-danhmuc h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.frame-danhmuc ul { list-style: none; padding: 0; }
+.frame-danhmuc li { padding: 8px 0; border-bottom: 1px solid #eee; cursor: pointer; }
+.frame-danhmuc li:hover { color: var(--primary-color); padding-left: 5px; transition: 0.3s; }
+
+/* Banner */
+.carousel {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.carousel-item img {
+    height: 450px;
+    object-fit: cover;
+}
+
+/* Card Sản phẩm */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    border-radius: 15px 15px 0 0;
+    height: 250px;
+    object-fit: contain;
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.card-body p {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+/* Form Login Popup */
+#login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 100px rgba(0,0,0,0.5);
+    z-index: 1000;
+    width: 400px;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
