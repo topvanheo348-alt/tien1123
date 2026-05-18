@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Giới thiệu</title>
+
+  <!-- Bootstrap + CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <style>
+    #login {
+      width: 400px;
+      min-height: 200px;
+      border: 1px solid grey;
+    }
+  </style>
+</head>
+
+<body>
+  <style>
+    #login1 {
+      width: 400px;
+      min-height: 200px;
+      border: 1px solid gray;
+      padding: 30px;
+      position: absolute;
+      left: calc(50% - 200px);
+      z-index: 50;
+      background-color: aliceblue;
+      top: 20%;
+      display: none;
+    }
+
+    .close1 {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  </style>
+
+  <title>Giới thiệu</title>
+  </head>
+
+  <body>
+    <form action="" id="login1">
+      <div class="close1">X</div>
+      <h1>Đăng nhập</h1>
+
+      <div class="fm my-3">
+        <input type="text" class="w-100" placeholder="user" id="user">
+      </div>
+
+      <div class="fm">
+        <input type="password" class="w-100" placeholder="password" id="password">
+      </div>
+
+      <div class="w-100 text-center mt-3">
+        <button class="btn btn-primary" id="submit">Đăng nhập</button>
+      </div>
+
+    </form>
+
+    <!-- HEADER -->
+    <div class="frame-header">
+      <div class="container">
+        <div class="row text-center">
+
+          <div class="col-md-4">
+            HOTLINE: 0985608947
+          </div>
+
+          <div class="col-md-4">
+           
+          </div>
+
+          <div class="col-md-4">
+            <button type="button" class="btn btn-outline-info me-2">
+              <i class="bi bi-cart-fill"></i> Giỏ Hàng
+          </button>
+            <button class="btn btn-primary" id="dangnhap">Đăng nhập</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+      <div class="container">
+          <a class="navbar-brand fw-bold" href="#"><img src="./logo/logo.png" width="40" class="me-2">TOYSHOP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link px-3" href="./index.html">Trang Chủ</a></li>
+                  <li class="nav-item"><a class="nav-link px-3" href="./gioithieu.html">Giới Thiệu</a></li>
+                  <li class="nav-item"><a class="nav-link px-3" href="./giohang.html">Giỏ Hàng</a></li>
+                  <li class="nav-item"><a class="nav-link px-3" href="./detail.html">Chi Tiết</a></li>
+                  <li class="nav-item dropdown text-white">
+                      <a class="nav-link dropdown-toggle px-3" href="#" data-bs-toggle="dropdown">Sản Phẩm</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Gundam</a></li>
+                          <li><a class="dropdown-item" href="#">Mô Hình Anime</a></li>
+                          <li><a class="dropdown-item" href="#">Lego</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item"><a class="nav-link px-3" href="#">Tin Tức</a></li>
+                  <li class="nav-item"><a class="nav-link px-3" href="#">Liên Hệ</a></li>
+              </ul>
+              <form class="d-flex">
+                  <div class="input-group">
+                      <input type="text" class="form-control border-0" placeholder="Tìm đồ chơi...">
+                      <button class="btn btn-warning"><i class="bi bi-search"></i></button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </nav>
+  <div class="container">
+      <!-- BANNER -->
+      <div class="banner">
+        <img src="./img/banner5.jpeg">
+      </div>
+      
+      <!-- NỘI DUNG GIỚI THIỆU -->
+      <div class="row mt-4">
+        <div class="col-md-12 text-center">
+          <h1>Về chúng tôi</h1>
+          <p>
+            Chào mừng bạn đến với <b>Shop đồ chơi VMtien</b> 🎉
+          </p>
+          <div class="row">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9MqwTTbWzao?si=8Ju0P6BElFTBXn5q"
+             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- GIỚI THIỆU CHUNG -->
+      <div class="row mt-3">
+        <div class="col-md-6">
+         <video src="img/video banner.mp4" style="width: 100%;" autoplay loop></video>
+        </div>
+        <div class="col-md-6">
+          <h3>Giới thiệu</h3>
+          <p>
+            Chúng tôi chuyên cung cấp các loại đồ chơi trẻ em chính hãng,
+            đảm bảo an toàn và giúp phát triển trí tuệ, sáng tạo cho trẻ nhỏ.
+          </p>
+
+          <h4>Sứ mệnh</h4>
+          <p>
+            Mang đến niềm vui và sự phát triển toàn diện cho trẻ em thông qua các sản phẩm chất lượng.
+          </p>
+
+          <h4>Tầm nhìn</h4>
+          <p>
+            Trở thành hệ thống cửa hàng đồ chơi uy tín hàng đầu Việt Nam.
+          </p>
+        </div>
+      </div>
+
+      <!-- ĐIỂM NỔI BẬT -->
+      <div class="row mt-5 text-center">
+        <h2>Vì sao chọn chúng tôi?</h2>
+
+        <div class="col-md-4">
+          <h4>✔ Chất lượng</h4>
+          <p>Sản phẩm chính hãng, an toàn cho trẻ</p>
+        </div>
+
+        <div class="col-md-4">
+          <h4>✔ Giá tốt</h4>
+          <p>Giá cạnh tranh nhất thị trường</p>
+        </div>
+
+        <div class="col-md-4">
+          <h4>✔ Dịch vụ</h4>
+          <p>Hỗ trợ tận tình, giao hàng nhanh</p>
+        </div>
+      </div>
+
+      <!-- KHÁCH HÀNG -->
+      <div class="row mt-5 text-center">
+        <h2>Khách hàng nói gì?</h2>
+
+        <div class="col-md-4">
+          <p>"Sản phẩm rất tốt, bé nhà mình rất thích!"</p>
+        </div>
+
+        <div class="col-md-4">
+          <p>"Giao hàng nhanh, đóng gói đẹp."</p>
+        </div>
+
+        <div class="col-md-4">
+          <p>"Shop tư vấn rất nhiệt tình!"</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer bg-dark text-light mt-5">
+      <div class="footer-container">
+
+        <div class="footer-col">
+          <h2>VMtien</h2>
+          <p>Shop đồ chơi chính hãng, giá tốt, uy tín.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Liên kết</h4>
+          <ul>
+            <li><a href="./produc.html">Trang chủ</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Liên hệ</h4>
+          <p>📍 TP.HCM</p>
+          <p>📞 1900 9999</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">toyshop.com</div>
+
+      <script>
+        $(document).ready(function () {
+          $("#dangnhap").click(function () {
+            $("#login1").toggle()
+          })
+
+          $(".close1").click(function () {
+            $("#login1").hide()
+          })
+        });
+
+        // kiem tra dang nhap
+        $(document).ready(function () {
+          $("#submit").click(function () {
+            event.preventDefault();
+
+            let user = $("#user").val();
+            let password = $("#password").val();
+
+            console.log(user);
+            console.log(password);
+
+            if (user == "" || password == "") {
+              alert("ban chua nhap user và password")
+            } else {
+              if (user == "admin" && password == "1234") {
+                alert("ban da dang nhap thanh cong")
+              }
+            }
+
+
+
+          })
+
+
+
+        });
+      </script>
+    </footer>
+
+  </body>
+
+</html>

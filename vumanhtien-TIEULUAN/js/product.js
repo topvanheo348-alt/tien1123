@@ -1,0 +1,14 @@
+const sanpham = [
+  { id: 1, name: "Skullpanda Alpha", image: "1.jpg", price: 100000, type: "khuyến mãi", category: "Robot Gundam RX-78 với thiết kế mạnh mẽ, chi tiết sắc nét, phù hợp cho người sưu tầm.", description: "Phiên bản đầu tiên của Skullpanda." },
+  { id: 2, name: "Molly Red", image: "2.jpg", price: 120000, type: "bán chạy", category: "Robot Transformer Optimus Prime có khả năng biến hình linh hoạt, mang đậm phong cách chiến binh.", description: "Molly đỏ năng động, dễ thương." },
+  { id: 3, name: "Dimoo Star", image: "3.jpg", price: 150000, type: "khuyến mãi", category: "Robot Mecha Warrior với lớp giáp kim loại cực ngầu, tái hiện chân thực các trận chiến tương lai.", description: "Dimoo phiên bản sao lấp lánh." },
+  { id: 4, name: "Skullpanda Beta", image: "4.jpg", price: 90000, type: "bán chạy", category: "Robot Iron Hero với hệ thống vũ khí hiện đại, thiết kế lấy cảm hứng từ siêu anh hùng", description: "Skullpanda Beta với thiết kế mới." },
+  { id: 5, name: "Molly Blue", image: "5.jpg", price: 110000, type: "khuyến mãi", category: "Robot Battle Droid nhỏ gọn nhưng cực kỳ linh hoạt, phù hợp trang trí bàn làm việc.", description: "Molly xanh dương tươi sáng." },
+  { id: 6, name: "Dimoo Moon", image: "6.jpg", price: 130000, type: "bán chạy", category: "Robot Cyber Tank kết hợp giữa xe tăng và robot, tạo nên phong cách chiến đấu độc đáo.", description: "Dimoo phiên bản mặt trăng dễ thương." },
+  { id: 7, name: "Skullpanda Gamma", image: "7.jpg", price: 95000, type: "khuyến mãi", category: "SKULLPARobot Samurai Mech mang phong cách Nhật Bản, tinh tế và đầy uy lực.NDA", description: "Skullpanda Gamma phiên bản giới hạn." },
+  { id: 8, name: "Molly Green", image: "8.jpg", price: 125000, type: "bán chạy", category: "Robot Space Defender được thiết kế cho các nhiệm vụ ngoài không gian, hiện đại và ấn tượng.", description: "Molly xanh lá nổi bật." },
+  { id: 9, name: "Dimoo Sun", image: "9.jpg", price: 140000, type: "khuyến mãi", category: "Robot Gundam RX-78 với thiết kế mạnh mẽ, chi tiết sắc nét, phù hợp cho người sưu tầm.", description: "Dimoo phiên bản mặt trời rực rỡ." },
+  { id: 10, name: "Skullpanda Delta", image: "10.jpg", price: 105000, type: "bán chạy", category: "SKULLPARobot Samurai Mech mang phong cách Nhật Bản, tinh tế và đầy uy lực.NDA", description: "Skullpanda Delta phiên bản phổ biến." },
+  { id: 11, name: "Molly Yellow", image: "11.jpg", price: 115000, type: "khuyến mãi", category: "Robot Gundam RX-78 với thiết kế mạnh mẽ, chi tiết sắc nét, phù hợp cho người sưu tầm.", description: "Molly vàng tươi vui nhộn." },
+  { id: 12, name: "Dimoo Galaxy", image: "12.jpg", price: 135000, type: "bán chạy", category: "Robot Gundam RX-78 với thiết kế mạnh mẽ, chi tiết sắc nét, phù hợp cho người sưu tầm.", description: "Dimoo phiên bản vũ trụ huyền bí." }
+];

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vd Validate Form</title>
+    <!-- Thư viện jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Thư viện jQuery Validation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+    <style>
+        form {
+            width: 450px;
+        }
+
+        label,
+        input {
+            width: 98%;
+        }
+
+        #Submit {
+            width: 100px;
+        }
+
+        li {
+            color: red;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#form1").validate({
+                rules: {
+                    Hoten: { required: true, minlength: 5 },
+                    NamSinh: { required: true, digits: true, range: [1950, 2010] },
+                    Email: { required: true, email: true },
+                },
+                messages: {
+                    Hoten: {
+                        required: "Họ tên bắt buộc nhập",
+                        minlength: "Họ tên phải nhập ít nhất 5 ký tự",
+                    },
+                    NamSinh: {
+                        required: "Năm sinh bắt buộc nhập",
+                        digits: "Năm sinh phải là số",
+                        range: "Năm sinh phải từ 1950 đến 2010",
+                    },
+                    Email: {
+                        required: "Email bắt buộc nhập",
+                        email: "Phải nhập đúng định dạng Email",
+                    },
+                },
+                errorLabelContainer: "#myError",
+                wrapper: "li",
+                //// Xử lý khi form không hợp lệ
+                invalidHandler: function (event, validator) {
+                    let errors = validator.errorList.map(err => err.message).join("\n");
+                    alert("Lỗi nhập liệu:\n" + errors);
+                },
+                submitHandler: function (form) {
+                    if (confirm("Bạn có muốn submit không?")) {
+                        form.submit();
+                    }
+                },
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <form id="form1" name="form1" method="post" action="">
+        <fieldset>
+            <legend>Thông tin thành viên</legend>
+            <p>
+                <label for="Hoten">Họ tên:</label>
+                <input name="Hoten" type="text" id="Hoten" />
+            </p>
+            <p>
+                <label for="NamSinh">Năm sinh:</label>
+                <input name="NamSinh" type="text" id="NamSinh" />
+            </p>
+            <p>
+                <label for="Email">Email:</label>
+                <input name="Email" type="text" id="Email" />
+            </p>
+            <div id="myError"></div>
+            <p style="text-align:center;">
+                <input type="submit" name="Submit" value="Submit" id="Submit" />
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
+
+
+
+Vd2. Khác
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validate Form</title>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#registerForm").submit(function(event) {
+                let isValid = true;
+
+                // Kiểm tra tên không được rỗng
+                const name = $("#name").val().trim();
+                if (name === "") {
+                    alert("Tên không được để trống!");
+                    isValid = false;
+                }
+
+                // Kiểm tra email hợp lệ
+                const email = $("#email").val();
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    alert("Email không hợp lệ!");
+                    isValid = false;
+                }
+
+                // Kiểm tra mật khẩu ít nhất 6 ký tự
+                const password = $("#password").val();
+                if (password.length < 6) {
+                    alert("Mật khẩu phải có ít nhất 6 ký tự!");
+                    isValid = false;
+                }
+
+                // Ngăn form gửi nếu không hợp lệ
+                if (!isValid) {
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+    <style>
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <form id="registerForm">
+        <label for="name">Tên:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="password">
+
+        <button type="submit">Đăng ký</button>
+    </form>
+</body>
+</html>
